@@ -2,7 +2,8 @@ name: Run Every 5 Minutes
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: "1 * * * *"
+  workflow_dispatch:
 
 jobs:
   example-job:
