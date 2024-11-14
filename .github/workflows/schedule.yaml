@@ -1,8 +1,8 @@
-name: Run Every 5 Minutes
+name: Run Every Minute
 
 on:
   schedule:
-    - cron: "*/1 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Run a command
-        run: echo "This job runs every 5 minutes"
+        run: echo "This job runs every minute"
